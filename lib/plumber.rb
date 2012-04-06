@@ -1,6 +1,8 @@
 require "plumber/version"
 require "plumber/context"
 
+require "active_record"
+
 # Provides functionality for creating and updating ActiveRecord model objects. Requires Rails 3+.
 class Plumber
   # Create a new instance which will act on the given model and log to the given logger.
