@@ -16,9 +16,6 @@ class Plumber
 
     yield context
 
-    # Ensure all children of the top-level context have had their records built:
-    context.build_records
-
     operation = if context.record.new_record?
                   "Create"
                 else
